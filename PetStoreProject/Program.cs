@@ -23,7 +23,7 @@ namespace PetStoreProject {
                 Color = "Brown and Tan"
             };
 
-            List<> //there is no class that the animals have in common so we add and Interface
+            //List<> //there is no class that the animals have in common so we add and Interface
         }
     }
 }
