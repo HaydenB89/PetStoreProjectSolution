@@ -5,11 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace PetStoreProject {
-    public class Bird {
+    public class Hampster {
         public int Inventory { get; set; } = 0;
         public string Sound { get; set; }
         public decimal Price { get; set; }
-        public int Longevity { get; set; }
-
+        public string Color { get; set; }
     }
 }
