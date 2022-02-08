@@ -18,9 +18,9 @@ namespace PetStoreProject {
                 CuteLevel = "Ultimate"
             };
             Hampster hampster = new Hampster() {
-                Inventory = 200,
+                Inventory = 50,
                 Sound = "Squeak",
-                Price = 200,
+                Price = 100,
                 Color = "Brown and Tan"
             };
 
