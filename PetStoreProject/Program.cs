@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace PetStoreProject {
     class Program {
@@ -23,7 +24,19 @@ namespace PetStoreProject {
                 Color = "Brown and Tan"
             };
 
-            //List<> //there is no class that the animals have in common so we add and Interface
+            List<IPetAnimal> animals = new List<IPetAnimal>();   //there is no class that the animals have in common so we add and Interface
+
+            animals.Add(hampster);
+            animals.Add(hedgehog);
+            animals.Add(parrot);
+
+            decimal total = 0;
+            foreach(IPetAnimal a in animals) {
+                decimal value = a.Price * a.Inventory;
+                total += value;
+                Console.WriteLine($"All {a.GetType().Name}s will net {value:c}");
+            }
+            Console.WriteLine($"Total value is {total:c}");
         }
     }
 }
